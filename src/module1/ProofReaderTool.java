@@ -1,6 +1,13 @@
 package module1;
 
 public class ProofReaderTool {
+	
+	public void validateUserName(String userName) {
+		if((userName.contains("!"))||(userName.contains("@"))||(userName.contains("#"))||(userName.contains("$"))||(userName.contains("%"))) {
+			System.out.println("Special characters are not allowed. Please re enter a valid user name");
+		}
+	}
+	
 
 	public static void main(String[] args) {
 
@@ -40,6 +47,9 @@ public class ProofReaderTool {
 			joinedWords = joinedWords.concat(elementFromArray).concat(" ");
 		}
 		System.out.println("Did the concatenation using the String class " + joinedWords);
+		
+		
+	
 
 	}
 
